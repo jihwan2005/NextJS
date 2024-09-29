@@ -1,39 +1,15 @@
 import Movie from "../../components/movie";
 import styles from "../../styles/home.module.css";
+import {
+  getNowPlayingMovies,
+  getPopularMovies,
+  getTopRateMovies,
+  getUpComingMovies,
+} from "../(home)/api";
 
 export const metadata = {
   title: "Home",
 };
-
-export const BASE_URL = 
-"https://api.themoviedb.org/3/movie";
-
-export const API_KEY = 
-"?api_key=cadc534207a9359a255c445e9ef71776";
-
-async function getNowPlayingMovies() {
-  const response = await fetch(`${BASE_URL}/now_playing${API_KEY}`);
-  const json = await response.json();
-  return json.results;
-}
-
-async function getPopularMovies() {
-  const response = await fetch(`${BASE_URL}/popular${API_KEY}`);
-  const json = await response.json();
-  return json.results;
-}
-
-async function getTopRateMovies() {
-  const response = await fetch(`${BASE_URL}/top_rated${API_KEY}`);
-  const json = await response.json();
-  return json.results;
-}
-
-async function getUpComingMovies() {
-  const response = await fetch(`${BASE_URL}/upcoming${API_KEY}`);
-  const json = await response.json();
-  return json.results;
-}
 
 export default async function HomePage() {
   const nowplayings = await getNowPlayingMovies();
