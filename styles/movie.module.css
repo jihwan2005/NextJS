@@ -1,0 +1,94 @@
+.movie {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 20px;
+  cursor: pointer;
+  place-items: center;
+}
+
+.movie img {
+  max-width: 100%;
+  min-height: 100%;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.movie img {
+  opacity: 0.7;
+}
+
+.movie img:hover {
+  opacity: 1;
+}
+
+.movie a {
+  text-align: center;
+}
+
+
+.review {
+  margin-bottom:50px;
+}
+
+.review p {
+  line-height: 1.5;
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.avatar {
+  width:40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.user_info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.username {
+  font-size: 25px;
+}
+
+.created_at {
+  margin-bottom: 10px;
+}
+
+.rating {
+  margin-bottom: 10px;
+}
+
+.reviewinfo {
+  display: flex;
+}
+
+.review_length {
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  margin-right: 10px;
+}
+
+.actor {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.name {
+  margin-bottom: 10px;
+}
+
+.gender {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,19 @@
+.title {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.movieList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap : 20px;
+}
+
+.img {
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.movieTitle {
+  margin-bottom: 10px;
+}
